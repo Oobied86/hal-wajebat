@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://oobied86.github.io/hal-wajebat/sitemap.xml
