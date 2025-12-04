@@ -12,33 +12,23 @@ header {
   color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
 header .logo {
   font-size: 1.8em;
   font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-
 header nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 40px;
-  margin: 0;
-  padding: 0;
 }
-
 header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
   transition: 0.3s;
-  padding: 5px 10px;
 }
-
 header nav ul li a:hover {
   color: #ffcc00;
   border-bottom: 2px solid #ffcc00;
@@ -96,7 +86,18 @@ header nav ul li a:hover {
   background: #f1f1f1;
 }
 .contact h2 { margin-bottom: 20px; font-size: 2em; color: #004080; }
-.contact p { margin: 10px 0; }
+.contact-links p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+.contact-links a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-links a:hover {
+  text-decoration: underline;
+}
 
 /* Footer */
 footer {
@@ -114,6 +115,7 @@ footer p { margin: 5px 0; }
   color: #ffcc00;
   text-decoration: none;
   font-weight: bold;
+  margin: 0 10px;
 }
 .footer-links a:hover {
   text-decoration: underline;
