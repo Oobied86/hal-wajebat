@@ -1,0 +1,102 @@
+/* الخطوط والألوان الأساسية */
+:root {
+  --primary: #0D47A1;    /* أزرق داكن */
+  --accent: #FF9800;     /* برتقالي */
+  --bg: #F5F7FA;         /* رمادي فاتح */
+  --text: #333333;       /* نص غامق */
+  --muted: #666666;
+  --card: #ffffff;
+  --border: #e6e9ee;
+}
+
+/* إعدادات عامة */
+body {
+  font-family: "Noto Kufi Arabic", "Cairo", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.85;
+}
+
+/* الهيدر */
+header {
+  background: linear-gradient(120deg, var(--primary), #163b7a);
+  color: #fff;
+  padding: 20px;
+  border-bottom: 4px solid var(--accent);
+}
+header h1 {
+  margin: 0;
+}
+nav a {
+  color: #fff;
+  margin: 0 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+nav a:hover {
+  background: #ffffff20;
+}
+
+/* المحتوى */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+h2 {
+  color: var(--primary);
+  margin-top: 20px;
+}
+ul {
+  list-style: disc;
+  padding-inline-start: 20px;
+}
+
+/* البطاقات */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px 0;
+  box-shadow: 0 4px 12px rgba(13,71,161,0.08);
+}
+
+/* الفورم */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin: 6px 0 12px;
+}
+form button {
+  background: var(--accent);
+  color: #352100;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+form button:hover {
+  opacity: 0.9;
+}
+
+/* الفوتر */
+footer {
+  background: #0f1b2e;
+  color: #c8d0e4;
+  text-align: center;
+  padding: 16px;
+  border-top: 4px solid var(--accent);
+  }
