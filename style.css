@@ -1,35 +1,46 @@
 /* Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Tahoma', sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
+body { font-family: 'Tahoma', sans-serif; background: #f9f9f9; color: #333; }
+
+/* Layout Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
 
 /* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
   background: linear-gradient(90deg, #004080, #00264d);
   color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-header .logo {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+.logo {
   font-size: 1.8em;
   font-weight: bold;
   letter-spacing: 1px;
 }
-header nav ul {
+nav ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-header nav ul li a {
+nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
   transition: 0.3s;
 }
-header nav ul li a:hover {
+nav ul li a:hover {
   color: #ffcc00;
   border-bottom: 2px solid #ffcc00;
 }
@@ -37,7 +48,7 @@ header nav ul li a:hover {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px;
   background: url('hero.jpg') no-repeat center center/cover;
   color: #fff;
 }
@@ -65,7 +76,7 @@ header nav ul li a:hover {
 }
 .service-list {
   list-style: none;
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
   text-align: right;
 }
@@ -79,44 +90,14 @@ header nav ul li a:hover {
   color: #004080;
 }
 
-/* Contact Section */
-.contact {
-  padding: 50px 20px;
-  text-align: center;
-  background: #f1f1f1;
-}
-.contact h2 { margin-bottom: 20px; font-size: 2em; color: #004080; }
-.contact-links p {
-  margin: 10px 0;
-  font-size: 1.1em;
-}
-.contact-links a {
-  color: #004080;
-  text-decoration: none;
-  font-weight: bold;
-}
-.contact-links a:hover {
-  text-decoration: underline;
-}
-
 /* Footer */
 footer {
   background: #004080;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   margin-top: 50px;
 }
-footer p { margin: 5px 0; }
-.footer-links {
-  margin-top: 10px;
-}
-.footer-links a {
-  color: #ffcc00;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
-}
-.footer-links a:hover {
-  text-decoration: underline;
+footer p {
+  font-size: 1em;
 }
