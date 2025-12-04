@@ -1,172 +1,71 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>حلول واجبات - خدمات طلابية شاملة</title>
-  <meta name="description" content="خدمات طلابية احترافية: حل واجبات واختبارات، عروض بوربوينت، بحوث ومشاريع، وحلول سيسكو." />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&family=Noto+Kufi+Arabic:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة واجبات</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <div class="header__bar">
-        <a class="brand" href="index.html" aria-label="حلول واجبات">
-          <span class="brand__logo">حل</span>
-          <span class="brand__text">
-            حلول واجبات
-            <small>خدمات طلابية شاملة</small>
-          </span>
-        </a>
-        <nav class="nav">
-          <a class="nav__link is-active" href="index.html">الرئيسية</a>
-          <a class="nav__link" href="services.html">الخدمات</a>
-          <a class="nav__link" href="blog.html">المدونة</a>
-          <a class="nav__link" href="about.html">عنّا</a>
-          <a class="nav__link" href="contact.html">تواصل</a>
-        </nav>
-        <div class="header__cta">
-          <a class="btn btn--sm btn--ghost" href="https://t.me/Quizat1t" target="_blank" rel="noopener">تلجرام</a>
-          <a class="btn btn--sm btn--accent" href="https://wa.me/+966538021822" target="_blank" rel="noopener">واتساب</a>
-        </div>
-      </div>
-    </div>
+  <header>
+    <div class="logo">منصة واجبات</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="blog.html">المدونة</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <div class="hero__content">
-        <h1 class="hero__title">حلول طلابية احترافية — بسرعة، دقة، وتنسيق مميز</h1>
-        <p class="hero__subtitle">نقدّم حلول واجبات واختبارات، عروض بوربوينت، بحوث ومشاريع، وحلول سيسكو مع شرح مبسّط.</p>
-        <div class="hero__actions">
-          <a class="btn btn--accent" href="contact.html">ابدأ طلبك الآن</a>
-          <a class="btn btn--ghost" href="services.html">تعرّف على خدماتنا</a>
-        </div>
+    <h1>مرحبا بكم في منصة واجبات</h1>
+    <p>منصة تعليمية متكاملة تقدم حلول وخدمات لدعم الطلاب والباحثين في مسيرتهم الأكاديمية.</p>
+    <a href="services.html" class="btn">اكتشف خدماتنا</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>من نحن</h2>
+    <p>منصة واجبات تأسست لتقديم الدعم الأكاديمي والمهني للطلاب والباحثين. نعمل على توفير محتوى علمي موثوق، خدمات تحرير، وتصميم مواقع تعليمية.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>خدماتنا</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>إعداد البحوث</h3>
+        <p>نساعدك في إعداد البحوث الأكاديمية وفق المعايير العلمية.</p>
+      </div>
+      <div class="card">
+        <h3>الاستشارات</h3>
+        <p>استشارات متخصصة لدعم مسيرتك التعليمية.</p>
+      </div>
+      <div class="card">
+        <h3>التقنية</h3>
+        <p>تصميم منصات تعليمية وخدمات تقنية متكاملة.</p>
       </div>
     </div>
   </section>
 
-  <!-- Trust badges -->
-  <section class="badges">
-    <div class="container badges__grid">
-      <div class="badge">
-        <strong>موثوقية</strong>
-        <span>خصوصية وتسليم في الوقت</span>
-      </div>
-      <div class="badge">
-        <strong>جودة</strong>
-        <span>مراجعة وشرح مبسّط</span>
-      </div>
-      <div class="badge">
-        <strong>سرعة</strong>
-        <span>استجابة خلال ساعات</span>
-      </div>
-      <div class="badge">
-        <strong>تنسيق</strong>
-        <span>ملفات جاهزة للنشر</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services overview -->
-  <section class="section section--light">
-    <div class="container">
-      <div class="section__head">
-        <h2>خدماتنا الأساسية</h2>
-        <p class="muted">حلول تعليمية شاملة مصممة لتسهيل الإنجاز والفهم معًا.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <h3>حل الواجبات والاختبارات</h3>
-          <p>حلول دقيقة مع شرح مبسّط يركّز على الفهم، وليس مجرد نقل.</p>
-        </article>
-        <article class="card">
-          <h3>عروض بوربوينت احترافية</h3>
-          <p>تصميم عصري، تسلسل منطقي، وألوان متناسقة تناسب العروض الأكاديمية.</p>
-        </article>
-        <article class="card">
-          <h3>بحوث ومشاريع</h3>
-          <p>صياغة علمية واضحة، مراجع موثوقة، وتنسيق كامل حسب متطلبات الجامعة.</p>
-        </article>
-        <article class="card">
-          <h3>حلول سيسكو وتقنية المعلومات</h3>
-          <p>دعم عملي في الشبكات والبرمجة مع ملفات قابلة للتطبيق.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head">
-        <h2>آراء الطلاب</h2>
-        <p class="muted">مقتطفات قصيرة تعكس جودة العمل وسرعة الاستجابة.</p>
-      </div>
-      <div class="quotes">
-        <blockquote class="quote">
-          <p>الخدمة كانت سريعة وممتازة، والشرح واضح خلاني أفهم المطلوب.</p>
-          <footer>طالب هندسة ميكانيكية</footer>
-        </blockquote>
-        <blockquote class="quote">
-          <p>عرض البوربوينت احترافي جدًا. تنسيق مرتب ورسوم توضيحية مناسبة.</p>
-          <footer>طالبة حاسب</footer>
-        </blockquote>
-        <blockquote class="quote">
-          <p>تسليم في الموعد وخصوصية عالية، أنصح بالتجربة.</p>
-          <footer>طالب إدارة أعمال</footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <div class="container cta__box">
-      <div>
-        <h3>جاهز نبدأ؟</h3>
-        <p class="muted">رسل تفاصيل مهمتك واضبط الوقت والتكلفة خلال وقت قصير.</p>
-      </div>
-      <div class="cta__actions">
-        <a class="btn btn--accent" href="https://wa.me/+966538021822" target="_blank" rel="noopener">طلب عبر واتساب</a>
-        <a class="btn btn--ghost" href="https://t.me/Quizat1t" target="_blank" rel="noopener">قناة تلجرام</a>
-      </div>
-    </div>
+  <!-- Blog Section -->
+  <section class="blog">
+    <h2>آخر المقالات</h2>
+    <p>تابع مدونتنا للحصول على مقالات ونصائح تعليمية حديثة.</p>
+    <a href="blog.html" class="btn">زيارة المدونة</a>
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <span class="brand__logo brand__logo--sm">حل</span>
-        <div>
-          <strong>حلول واجبات</strong>
-          <div class="muted">خدمات طلابية شاملة</div>
-        </div>
-      </div>
-
-      <nav class="footer__nav">
-        <a href="index.html">الرئيسية</a>
-        <a href="services.html">الخدمات</a>
-        <a href="blog.html">المدونة</a>
-        <a href="about.html">عنّا</a>
-        <a href="contact.html">تواصل</a>
-      </nav>
-
-      <div class="footer__meta">
-        <div>© حلول واجبات — جميع الحقوق محفوظة</div>
-        <div>آخر تحديث: <span id="last-update"></span></div>
-      </div>
-    </div>
+  <footer>
+    <p>© 2025 منصة واجبات - جميع الحقوق محفوظة</p>
+    <p>البريد: info@wajebat.com | الهاتف: +966-555-555-555</p>
   </footer>
 
-  <script>
-    document.getElementById('last-update').textContent = new Date().toLocaleDateString('ar-SA');
-  </script>
 </body>
-  </html>
+</html>
