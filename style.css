@@ -23,24 +23,19 @@ header .logo {
 header nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;   /* يوزن العناصر في خط واحد */
+  justify-content: center;
   align-items: center;
-  gap: 40px;                 /* مسافة متساوية بين الكلمات */
+  gap: 40px;
   margin: 0;
   padding: 0;
-}
-
-header nav ul li {
-  text-align: center;
 }
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1em;          /* نفس حجم الخط لكل العناصر */
+  font-size: 1.1em;
   transition: 0.3s;
-  display: inline-block;
   padding: 5px 10px;
 }
 
@@ -112,3 +107,14 @@ footer {
   margin-top: 50px;
 }
 footer p { margin: 5px 0; }
+.footer-links {
+  margin-top: 10px;
+}
+.footer-links a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
