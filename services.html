@@ -1,31 +1,104 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>الخدمات - حلول واجبات</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="استعرض خدمات حلول واجبات: حل واجبات واختبارات، عروض بوربوينت، بحوث ومشاريع، وحلول سيسكو." />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&family=Noto+Kufi+Arabic:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>الخدمات</h1>
-    <nav>
-      <a href="index.html">الرئيسية</a> |
-      <a href="about.html">عنّا</a> |
-      <a href="blog.html">المدونة</a> |
-      <a href="contact.html">تواصل</a>
-    </nav>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header__bar">
+        <a class="brand" href="index.html">
+          <span class="brand__logo">حل</span>
+          <span class="brand__text">
+            حلول واجبات
+            <small>خدمات طلابية شاملة</small>
+          </span>
+        </a>
+        <nav class="nav">
+          <a class="nav__link" href="index.html">الرئيسية</a>
+          <a class="nav__link is-active" href="services.html">الخدمات</a>
+          <a class="nav__link" href="blog.html">المدونة</a>
+          <a class="nav__link" href="about.html">عنّا</a>
+          <a class="nav__link" href="contact.html">تواصل</a>
+        </nav>
+      </div>
+    </div>
   </header>
-  <main>
-    <h2>خدماتنا</h2>
-    <ul>
-      <li>حل الواجبات والاختبارات الجامعية.</li>
-      <li>إعداد عروض بوربوينت احترافية.</li>
-      <li>تنفيذ البحوث والمشاريع الأكاديمية.</li>
-      <li>حل مسائل سيسكو وتقنية المعلومات.</li>
-    </ul>
-  </main>
-  <footer>
-    <p>© حلول واجبات</p>
+
+  <!-- Services Section -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="section__head">
+        <h2>خدماتنا</h2>
+        <p class="muted">نقدّم حلول تعليمية متكاملة لتسهيل الإنجاز والفهم معًا.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>حل الواجبات والاختبارات</h3>
+          <p>حلول دقيقة مع شرح مبسّط يركّز على الفهم، وليس مجرد النقل.</p>
+        </article>
+        <article class="card">
+          <h3>عروض بوربوينت احترافية</h3>
+          <p>تصميم عصري، تسلسل منطقي، وألوان متناسقة تناسب العروض الأكاديمية.</p>
+        </article>
+        <article class="card">
+          <h3>بحوث ومشاريع</h3>
+          <p>صياغة علمية واضحة، مراجع موثوقة، وتنسيق كامل حسب متطلبات الجامعة.</p>
+        </article>
+        <article class="card">
+          <h3>حلول سيسكو وتقنية المعلومات</h3>
+          <p>دعم عملي في الشبكات والبرمجة مع ملفات قابلة للتطبيق.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta__box">
+      <div>
+        <h3>هل تحتاج خدمة الآن؟</h3>
+        <p class="muted">تواصل معنا مباشرة عبر واتساب أو تلجرام.</p>
+      </div>
+      <div class="cta__actions">
+        <a class="btn btn--accent" href="https://wa.me/+966538021822" target="_blank" rel="noopener">طلب عبر واتساب</a>
+        <a class="btn btn--ghost" href="https://t.me/Quizat1t" target="_blank" rel="noopener">قناة تلجرام</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="brand__logo brand__logo--sm">حل</span>
+        <div>
+          <strong>حلول واجبات</strong>
+          <div class="muted">خدمات طلابية شاملة</div>
+        </div>
+      </div>
+
+      <nav class="footer__nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">الخدمات</a>
+        <a href="blog.html">المدونة</a>
+        <a href="about.html">عنّا</a>
+        <a href="contact.html">تواصل</a>
+      </nav>
+
+      <div class="footer__meta">
+        <div>© حلول واجبات — جميع الحقوق محفوظة</div>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
