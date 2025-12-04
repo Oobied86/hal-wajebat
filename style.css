@@ -7,7 +7,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 60px;
   background: linear-gradient(90deg, #004080, #00264d);
   color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -23,20 +23,25 @@ header .logo {
 header nav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  margin-right: 40px; /* نسحب القوائم لليسار */
+  justify-content: center;   /* يوزن العناصر في خط واحد */
+  align-items: center;
+  gap: 40px;                 /* مسافة متساوية بين الكلمات */
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
-  margin-left: 30px;
+  text-align: center;
 }
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.1em;          /* نفس حجم الخط لكل العناصر */
   transition: 0.3s;
+  display: inline-block;
+  padding: 5px 10px;
 }
 
 header nav ul li a:hover {
