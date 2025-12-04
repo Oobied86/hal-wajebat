@@ -4,272 +4,169 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>حلول واجبات - خدمات طلابية شاملة</title>
-
-  <!-- SEO -->
-  <meta name="description" content="خدمات طلابية شاملة: حل واجبات واختبارات، عروض بوربوينت، تكاليف وبحوث ومشاريع، وحل مسائل سيسكو. انضم إلى قناتنا على تلجرام أو تواصل عبر واتساب." />
-  <meta name="keywords" content="حل واجبات, حلول واجبات جامعية, اختبارات, عروض بوربوينت, بحوث, مشاريع, حل سيسكو, خدمات طلابية" />
-  <meta name="author" content="حلول واجبات" />
-  <link rel="canonical" href="https://example.github.io/hal-wajebat" />
-
-  <!-- Fonts -->
+  <meta name="description" content="خدمات طلابية احترافية: حل واجبات واختبارات، عروض بوربوينت، بحوث ومشاريع، وحلول سيسكو." />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&family=Noto+Kufi+Arabic:wght@400;600&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --primary:#0D47A1;    /* أزرق داكن */
-      --accent:#FF9800;     /* برتقالي */
-      --bg:#F5F7FA;         /* رمادي فاتح */
-      --text:#333333;       /* نص غامق */
-      --muted:#666666;
-      --card:#ffffff;
-      --border:#e6e9ee;
-    }
-    *{box-sizing:border-box;}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);}
-    body{font-family:"Noto Kufi Arabic","Cairo",system-ui,-apple-system,Segoe UI,Roboto,sans-serif; line-height:1.7;}
-    a{color:var(--primary);text-decoration:none}
-    a:hover{opacity:.85}
-    .container{max-width:1080px;margin:0 auto;padding:0 20px}
-    header{
-      background:linear-gradient(120deg, var(--primary), #163b7a);
-      color:#fff;
-      padding:32px 0 20px;
-      border-bottom:4px solid var(--accent);
-    }
-    .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{display:flex;align-items:center;gap:10px}
-    .logo{
-      width:42px;height:42px;border-radius:8px;
-      background:#fff1; border:1px solid #ffffff30;
-      display:flex;align-items:center;justify-content:center;
-      font-weight:700;color:#fff
-    }
-    nav a{color:#fff;margin:0 8px;padding:8px 12px;border-radius:8px}
-    nav a:hover{background:#ffffff15}
-    .hero{padding:28px 0 40px}
-    .hero h1{font-family:"Cairo";font-weight:700;margin:0 0 12px}
-    .hero p{color:#e9edf7;margin:0 0 22px}
-    .cta{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{
-      display:inline-block;padding:12px 18px;border-radius:10px;font-weight:600
-    }
-    .btn-primary{background:var(--accent);color:#352100}
-    .btn-outline{border:2px solid #ffffff55;color:#fff}
-    .section{padding:40px 0}
-    .section h2{font-family:"Cairo";font-weight:700;margin:0 0 16px;color:var(--primary)}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    @media (max-width:900px){ .grid{grid-template-columns:repeat(2,1fr)} }
-    @media (max-width:640px){ .grid{grid-template-columns:1fr} .cta{flex-direction:column} }
-    .card{
-      background:var(--card); border:1px solid var(--border); border-radius:14px;
-      padding:18px; box-shadow:0 6px 18px rgba(13,71,161,0.06)
-    }
-    .card h3{margin:0 0 8px;font-size:1.05rem}
-    .badge{display:inline-block;background:#E3F2FD;color:var(--primary);
-      padding:6px 10px;border-radius:999px;font-size:.85rem;margin-bottom:8px}
-    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    @media (max-width:900px){ .features{grid-template-columns:repeat(2,1fr)} }
-    @media (max-width:640px){ .features{grid-template-columns:1fr} }
-    .feature{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px}
-    .feature h4{margin:0 0 6px;font-size:1rem;color:var(--primary)}
-    .muted{color:var(--muted)}
-    .footer{
-      padding:24px 0; background:#0f1b2e; color:#c8d0e4; border-top:4px solid var(--accent)
-    }
-    .footer a{color:#c8d0e4}
-    .list{margin:0;padding-inline-start:18px}
-    .list li{margin:6px 0}
-    .contact-box{
-      display:grid;grid-template-columns:1fr 1fr;gap:16px
-    }
-    @media (max-width:800px){ .contact-box{grid-template-columns:1fr} }
-    .note{background:#FFF8E1;border:1px solid #FFE082;border-radius:10px;padding:12px;margin-top:10px}
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Header -->
-  <header>
+  <header class="site-header">
     <div class="container">
-      <div class="topbar">
-        <div class="brand">
-          <div class="logo">حل</div>
-          <div>
-            <div style="font-weight:700">حلول واجبات</div>
-            <div style="font-size:.9rem;opacity:.9">خدمات طلابية شاملة</div>
-          </div>
-        </div>
-        <nav>
-          <a href="#home">الرئيسية</a>
-          <a href="#services">الخدمات</a>
-          <a href="#blog">المدونة</a>
-          <a href="#about">عنّا</a>
-          <a href="#contact">تواصل</a>
+      <div class="header__bar">
+        <a class="brand" href="index.html" aria-label="حلول واجبات">
+          <span class="brand__logo">حل</span>
+          <span class="brand__text">
+            حلول واجبات
+            <small>خدمات طلابية شاملة</small>
+          </span>
+        </a>
+        <nav class="nav">
+          <a class="nav__link is-active" href="index.html">الرئيسية</a>
+          <a class="nav__link" href="services.html">الخدمات</a>
+          <a class="nav__link" href="blog.html">المدونة</a>
+          <a class="nav__link" href="about.html">عنّا</a>
+          <a class="nav__link" href="contact.html">تواصل</a>
         </nav>
-      </div>
-
-      <div id="home" class="hero">
-        <h1>خدمات طلابية شاملة — حل واجبات واختبارات، عروض بوربوينت، بحوث ومشاريع، وحل سيسكو</h1>
-        <p>نساعدك على الإنجاز بسرعة وبدقة وبأسلوب تعليمي بسيط. انضم إلى قناتنا وتواصل مباشرة للحصول على الدعم المناسب.</p>
-        <div class="cta">
-          <a class="btn btn-primary" href="https://t.me/Quizat1t" target="_blank" rel="noopener">انضم إلى قناة تلجرام</a>
-          <a class="btn btn-outline" href="https://wa.me/+966538021822" target="_blank" rel="noopener">تواصل واتساب</a>
+        <div class="header__cta">
+          <a class="btn btn--sm btn--ghost" href="https://t.me/Quizat1t" target="_blank" rel="noopener">تلجرام</a>
+          <a class="btn btn--sm btn--accent" href="https://wa.me/+966538021822" target="_blank" rel="noopener">واتساب</a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Services -->
-  <section id="services" class="section">
+  <!-- Hero -->
+  <section class="hero">
     <div class="container">
-      <h2>الخدمات</h2>
-      <p class="muted">نقدّم حلول تعليمية متكاملة لجميع التخصصات والمسارات، مع التركيز على الجودة والسرعة.</p>
+      <div class="hero__content">
+        <h1 class="hero__title">حلول طلابية احترافية — بسرعة، دقة، وتنسيق مميز</h1>
+        <p class="hero__subtitle">نقدّم حلول واجبات واختبارات، عروض بوربوينت، بحوث ومشاريع، وحلول سيسكو مع شرح مبسّط.</p>
+        <div class="hero__actions">
+          <a class="btn btn--accent" href="contact.html">ابدأ طلبك الآن</a>
+          <a class="btn btn--ghost" href="services.html">تعرّف على خدماتنا</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="grid">
-        <div class="card">
-          <span class="badge">حلول واجبات</span>
+  <!-- Trust badges -->
+  <section class="badges">
+    <div class="container badges__grid">
+      <div class="badge">
+        <strong>موثوقية</strong>
+        <span>خصوصية وتسليم في الوقت</span>
+      </div>
+      <div class="badge">
+        <strong>جودة</strong>
+        <span>مراجعة وشرح مبسّط</span>
+      </div>
+      <div class="badge">
+        <strong>سرعة</strong>
+        <span>استجابة خلال ساعات</span>
+      </div>
+      <div class="badge">
+        <strong>تنسيق</strong>
+        <span>ملفات جاهزة للنشر</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services overview -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="section__head">
+        <h2>خدماتنا الأساسية</h2>
+        <p class="muted">حلول تعليمية شاملة مصممة لتسهيل الإنجاز والفهم معًا.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
           <h3>حل الواجبات والاختبارات</h3>
-          <p>حلول دقيقة ومراجَعة مع شرح مبسّط يساعدك على الفهم، وليس مجرد نقل.</p>
-        </div>
-        <div class="card">
-          <span class="badge">عروض</span>
-          <h3>إعداد عروض بوربوينت احترافية</h3>
-          <p>تصميم عصري، محتوى منظم، وألوان متناسقة تناسب العروض الأكاديمية.</p>
-        </div>
-        <div class="card">
-          <span class="badge">بحوث ومشاريع</span>
-          <h3>تنفيذ التكاليف والبحوث والمشاريع</h3>
+          <p>حلول دقيقة مع شرح مبسّط يركّز على الفهم، وليس مجرد نقل.</p>
+        </article>
+        <article class="card">
+          <h3>عروض بوربوينت احترافية</h3>
+          <p>تصميم عصري، تسلسل منطقي، وألوان متناسقة تناسب العروض الأكاديمية.</p>
+        </article>
+        <article class="card">
+          <h3>بحوث ومشاريع</h3>
           <p>صياغة علمية واضحة، مراجع موثوقة، وتنسيق كامل حسب متطلبات الجامعة.</p>
-        </div>
-        <div class="card">
-          <span class="badge">سيسكو وتقنية</span>
-          <h3>حل مسائل سيسكو وتقنية المعلومات</h3>
-          <p>دعم عملي في الشبكات والبرمجة مع ملفات جاهزة وقابلة للتطبيق.</p>
-        </div>
-        <div class="card">
-          <span class="badge">سرعة وجودة</span>
-          <h3>آلية الطلب المباشرة</h3>
-          <ol class="list">
-            <li>أرسل المهمة عبر تلجرام أو واتساب.</li>
-            <li>نراجع التفاصيل ونحدّد الوقت والتكلفة.</li>
-            <li>تستلم الحل أو العرض مع شرح مختصر.</li>
-          </ol>
-        </div>
-        <div class="card">
-          <span class="badge">ثقة</span>
-          <h3>خصوصية ومصداقية</h3>
-          <p>نلتزم بخصوصية ملفاتك ونضمن جودة المحتوى وتسليمًا في الوقت المحدد.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blog -->
-  <section id="blog" class="section" aria-label="المدونة">
-    <div class="container">
-      <h2>المدونة</h2>
-      <p class="muted">مقالات قصيرة تساعدك على الإنجاز والفهم، وتُحسّن ظهور الموقع في نتائج البحث.</p>
-
-      <div class="features">
-        <article class="feature">
-          <h4>أفضل طريقة لحل الواجبات الجامعية بسرعة وبدقة</h4>
-          <p>ابدأ بفهم المطلوب بدقة، ثم اجمع المصادر الأساسية، وقسّم المهمة، واستخدم أدوات المساعدة، وأعد المراجعة قبل التسليم.</p>
-          <div class="note">انضم إلى القناة للحصول على حلول جاهزة ومراجَعة: <a href="https://t.me/Quizat1t" target="_blank" rel="noopener">قناة تلجرام</a></div>
         </article>
-
-        <article class="feature">
-          <h4>خمس نصائح لعرض بوربوينت احترافي في الجامعة</h4>
-          <p>ركّز على بساطة الشرائح، ألوان متناسقة، صور داعمة، ونصوص مختصرة مع تسلسل منطقي.</p>
-          <div class="note">تحتاج عرض جاهز؟ تواصل مباشرة عبر <a href="https://wa.me/+966538021822" target="_blank" rel="noopener">واتساب</a>.</div>
-        </article>
-
-        <article class="feature">
-          <h4>كيف تنظّم مشروع جامعي صغير بسرعة</h4>
-          <p>حدّد الهدف، قسّم المهام، ضع جدولًا زمنيًا، وثّق المراجع، وراجع المخاطر المحتملة قبل التنفيذ.</p>
-          <div class="note">لدعم المشاريع القصيرة: <a href="https://t.me/Quizat1t" target="_blank" rel="noopener">تلجرام</a> أو <a href="https://wa.me/+966538021822" target="_blank" rel="noopener">واتساب</a>.</div>
+        <article class="card">
+          <h3>حلول سيسكو وتقنية المعلومات</h3>
+          <p>دعم عملي في الشبكات والبرمجة مع ملفات قابلة للتطبيق.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section" aria-label="عنّا">
+  <!-- Testimonials -->
+  <section class="section">
     <div class="container">
-      <h2>عنّا</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>رسالتنا</h3>
-          <p>نسهّل حياة الطالب بتقديم حلول عملية ومحتوى منظم يساعد على الإنجاز والفهم معًا.</p>
-        </div>
-        <div class="card">
-          <h3>منهجنا</h3>
-          <ul class="list">
-            <li>وضوح: تبسيط المفاهيم المعقّدة بأسلوب مباشر.</li>
-            <li>نزاهة: حلول دقيقة مع احترام الخصوصية.</li>
-            <li>عملية: ملفات جاهزة قابلة للتطبيق الأكاديمي.</li>
-            <li>تطوير مستمر: مواكبة احتياجات الطلاب وتحديث الخدمات.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>لماذا نحن؟</h3>
-          <ul class="list">
-            <li>خبرة متعددة التخصصات.</li>
-            <li>سرعة مع جودة عالية.</li>
-            <li>دعم مباشر عبر تلجرام وواتساب.</li>
-            <li>محتوى يساعدك على الفهم، وليس مجرد نسخ.</li>
-          </ul>
-        </div>
+      <div class="section__head">
+        <h2>آراء الطلاب</h2>
+        <p class="muted">مقتطفات قصيرة تعكس جودة العمل وسرعة الاستجابة.</p>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote">
+          <p>الخدمة كانت سريعة وممتازة، والشرح واضح خلاني أفهم المطلوب.</p>
+          <footer>طالب هندسة ميكانيكية</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>عرض البوربوينت احترافي جدًا. تنسيق مرتب ورسوم توضيحية مناسبة.</p>
+          <footer>طالبة حاسب</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>تسليم في الموعد وخصوصية عالية، أنصح بالتجربة.</p>
+          <footer>طالب إدارة أعمال</footer>
+        </blockquote>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section" aria-label="تواصل معنا">
-    <div class="container">
-      <h2>تواصل معنا</h2>
-      <div class="contact-box">
-        <div class="card">
-          <h3>نموذج الطلب</h3>
-          <!-- نموذج بسيط (لا يعمل بدون Backend، لكنه شكلي كبداية) -->
-          <form>
-            <label>الاسم</label>
-            <input type="text" placeholder="اكتب اسمك" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:10px;margin:6px 0 10px">
-            <label>المادة/التخصص</label>
-            <input type="text" placeholder="مثال: هندسة ميكانيكية" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:10px;margin:6px 0 10px">
-            <label>وصف المهمة</label>
-            <textarea placeholder="صف المهمة بإيجاز"
-              style="width:100%;min-height:110px;padding:10px;border:1px solid var(--border);border-radius:10px;margin:6px 0 10px"></textarea>
-            <label>موعد التسليم المطلوب</label>
-            <input type="text" placeholder="مثال: خلال يومين"
-              style="width:100%;padding:10px;border:1px solid var(--border);border-radius:10px;margin:6px 0 16px">
-            <button type="button"
-              onclick="window.open('https://wa.me/+966538021822','_blank')"
-              class="btn btn-primary">إرسال عبر واتساب</button>
-          </form>
-          <div class="note">للتسليم السريع، يُفضّل التواصل المباشر عبر واتساب.</div>
-        </div>
-
-        <div class="card">
-          <h3>روابط مباشرة</h3>
-          <p><strong>قناة تلجرام:</strong> <a href="https://t.me/Quizat1t" target="_blank" rel="noopener">اضغط هنا</a></p>
-          <p><strong>واتساب مباشر:</strong> <a href="https://wa.me/+966538021822" target="_blank" rel="noopener">اضغط هنا</a></p>
-          <p class="muted">نلتزم بالخصوصية وعدم مشاركة ملفاتك مع أي طرف.</p>
-        </div>
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta__box">
+      <div>
+        <h3>جاهز نبدأ؟</h3>
+        <p class="muted">رسل تفاصيل مهمتك واضبط الوقت والتكلفة خلال وقت قصير.</p>
+      </div>
+      <div class="cta__actions">
+        <a class="btn btn--accent" href="https://wa.me/+966538021822" target="_blank" rel="noopener">طلب عبر واتساب</a>
+        <a class="btn btn--ghost" href="https://t.me/Quizat1t" target="_blank" rel="noopener">قناة تلجرام</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
-      <div>© حلول واجبات — جميع الحقوق محفوظة</div>
-      <div style="opacity:.8">موقع بسيط ومُحسّن للبحث. آخر تحديث: <span id="d"></span></div>
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="brand__logo brand__logo--sm">حل</span>
+        <div>
+          <strong>حلول واجبات</strong>
+          <div class="muted">خدمات طلابية شاملة</div>
+        </div>
+      </div>
+
+      <nav class="footer__nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">الخدمات</a>
+        <a href="blog.html">المدونة</a>
+        <a href="about.html">عنّا</a>
+        <a href="contact.html">تواصل</a>
+      </nav>
+
+      <div class="footer__meta">
+        <div>© حلول واجبات — جميع الحقوق محفوظة</div>
+        <div>آخر تحديث: <span id="last-update"></span></div>
+      </div>
     </div>
   </footer>
 
   <script>
-    // تاريخ مبسّط في الفوتر
-    document.getElementById('d').textContent = new Date().toLocaleDateString('ar-SA');
+    document.getElementById('last-update').textContent = new Date().toLocaleDateString('ar-SA');
   </script>
 </body>
   </html>
